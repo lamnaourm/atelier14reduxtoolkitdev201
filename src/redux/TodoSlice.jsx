@@ -26,7 +26,8 @@ const TodoSlice = createSlice({
     reducers: {
         addtache : (state, action) => {
             state.tasks = [...state.tasks, {id:uuid(), task: action.payload, completed:false}]
-        }
+        },
+        
     }
 })
 
